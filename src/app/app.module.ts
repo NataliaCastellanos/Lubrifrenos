@@ -18,9 +18,11 @@ import { OpcionesComponent } from './components/bodies/menu/opciones/opciones/op
 
 import { ProductosComponent } from './components/bodies/menu/inventario/productos/productos.component';
 import { CrearProductoComponent } from './components/bodies/menu/inventario/crear-producto/crear-producto.component';
+import { EliminarProductoComponent } from './components/bodies/menu/inventario/eliminar-producto/eliminar-producto.component';
 
 // services
-import { OpcionesService} from './servicios/opciones.service';
+import {EliminarProductoService} from './servicios/eliminar-producto.service';
+
 
 
 @NgModule({
@@ -33,14 +35,15 @@ import { OpcionesService} from './servicios/opciones.service';
     IniciarSesionComponent,
     OpcionesComponent,
     ProductosComponent,
-    CrearProductoComponent
+    CrearProductoComponent,
+    EliminarProductoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
   providers: [
-    OpcionesService
+    EliminarProductoService
   ],
   bootstrap: [AppComponent]
 })

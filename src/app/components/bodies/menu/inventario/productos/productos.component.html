@@ -1,45 +1,54 @@
-<div class="col">
-    <div class="row" style="align-content: left">
+<div class="row">
+    <div class="col-md-8">
+        <button type="button" class="btn btn-primary" style="background-color: rgb(3,46,110)" [routerLink]='["crear-producto"]'>Crear Producto</button>
+    </div>
+    <div class="col-md-4">
         <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Buscar producto" aria-label="Buscar">
             <button type="button" class="btn btn-primary" style="background-color: rgb(3,46,110)">Buscar</button>
         </form>
     </div>
-    <hr>
-    <div class="row">
-        <table class="table">
-            <thead class="thead-dark" style="background-color: rgb(3,46,110)">
-                <tr>
-                    <th scope=" col ">#</th>
-                    <th scope="col ">First</th>
-                    <th scope="col ">Last</th>
-                    <th scope="col ">Handle</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row ">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                </tr>
-                <tr>
-                    <th scope="row ">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                </tr>
-                <tr>
-                    <th scope="row ">3</th>
-                    <td>Larry</td>
-                    <td>the Bird</td>
-                    <td>@twitter</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
 </div>
 <hr>
-<div class="col">
-    <button type="button" class="btn btn-primary" style="background-color: rgb(3,46,110)" [routerLink]='["crear-producto"]'>Crear Producto</button>
+<div class="row">
+    <table class="table">
+        <thead class="thead-light">
+            <tr>
+                <th scope=" col ">#</th>
+                <th scope="col ">Linea</th>
+                <th scope="col ">Marca</th>
+                <th scope="col ">Nombre</th>
+                <th scope="col ">Cantidad</th>
+                <th scope="col ">Valor Unidad</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row ">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+                <td>1</td>
+                <td>40000</td>
+                <td><a [routerLink]='["crear-producto"]'> eliminar </a> | <a [routerLink]='["crear-producto"]'> modificar</a></td>
+            </tr>
+            <tr>
+                <th scope="row ">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+                <td>1</td>
+                <td>40000</td>
+            </tr>
+            <tr>
+                <th scope="row ">3</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+                <td>1</td>
+                <td>40000</td>
+            </tr>
+        </tbody>
+    </table>
 </div>

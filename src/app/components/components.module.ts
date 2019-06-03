@@ -11,8 +11,10 @@ import { ContactenosComponent } from './bodies/home/contactenos/contactenos.comp
 import { IniciarSesionComponent } from './bodies/home/iniciar-sesion/iniciar-sesion.component';
 
 import { OpcionesComponent } from './bodies/menu/opciones/opciones/opciones.component';
+
 import { CrearProductoComponent } from './bodies/menu/inventario/crear-producto/crear-producto.component';
 import { ProductosComponent } from './bodies/menu/inventario/productos/productos.component';
+import { EliminarProductoComponent } from './bodies/menu/inventario/eliminar-producto/eliminar-producto.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,8 @@ import { ProductosComponent } from './bodies/menu/inventario/productos/productos
     IniciarSesionComponent,
     OpcionesComponent,
     CrearProductoComponent,
-    ProductosComponent
+    ProductosComponent,
+    EliminarProductoComponent
   ],
   imports: [
     CommonModule,
