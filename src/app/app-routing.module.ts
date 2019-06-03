@@ -21,8 +21,8 @@ const routes: Routes = [
   {path: 'iniciar-sesion/menu', component: OpcionesComponent},
   {path: 'iniciar-sesion/menu/productos', component: ProductosComponent},
   {path: 'iniciar-sesion/menu/productos/crear-producto', component: CrearProductoComponent},
-  {path: 'iniciar-sesion/menu/productos/eliminar-producto', component: EliminarProductoComponent},
-  {path: 'iniciar-sesion/menu/productos/modificar-producto', component: ModificarProductoComponent},
+  {path: 'iniciar-sesion/menu/productos/eliminar-producto/:id', component: EliminarProductoComponent},
+  {path: 'iniciar-sesion/menu/productos/modificar-producto/:id', component: ModificarProductoComponent},
   {path: '**', pathMatch: 'full', redirectTo: 'inicio'}
 ];
 
