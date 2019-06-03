@@ -1,15 +1,24 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { AuthService } from '../../servicios/auth.service';
+
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.sass']
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent {
 
-  constructor() { }
+  constructor( private auth: AuthService ) {
+    auth.handleAuthentication();
+  }
 
-  ngOnInit() {
+  login() {
+    this.auth.login();
+  }
+
+  salir() {
+    this.auth.logout();
   }
 
 }

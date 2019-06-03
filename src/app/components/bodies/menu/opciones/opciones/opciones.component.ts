@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from '../../../../../servicios/auth.service';
 
 @Component({
   selector: 'app-opciones',
@@ -6,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OpcionesComponent implements OnInit {
 
-  constructor() {
-
+  constructor( private auth: AuthService ) {
+    auth.handleAuthentication();
   }
 
   ngOnInit() {

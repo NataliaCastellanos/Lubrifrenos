@@ -21,6 +21,10 @@ import { CrearProductoComponent } from './components/bodies/menu/inventario/crea
 import { EliminarProductoComponent } from './components/bodies/menu/inventario/eliminar-producto/eliminar-producto.component';
 import { ModificarProductoComponent } from './components/bodies/menu/inventario/modificar-producto/modificar-producto.component';
 
+// servicos
+
+import { AuthService } from './servicios/auth.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,6 +44,7 @@ import { ModificarProductoComponent } from './components/bodies/menu/inventario/
     AppRoutingModule
   ],
   providers: [
+    AuthService
   ],
   bootstrap: [AppComponent]
 })

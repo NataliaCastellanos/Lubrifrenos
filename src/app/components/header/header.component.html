@@ -10,9 +10,23 @@
             <li class="nav-item" routerLinkActive="active">
                 <a class="nav-link" [routerLink]="['contactenos']">Contáctenos</a>
             </li>
-            <li class="nav-item" routerLinkActive="active">
-                <a class="nav-link" [routerLink]="['iniciar-sesion']">Iniciar sesión</a>
+            <li class="nav-item" routerLinkActive="active" *ngIf="auth.isAuthenticated()">
+                <a class="nav-link" [routerLink]="['menu']">Opciones</a>
             </li>
         </ul>
+
+        <span class="navbar-text">
+            <button (click)="login()" 
+                    *ngIf="!auth.isAuthenticated()" 
+                    type="button" 
+                    class="btn btn-outline-light">Iniciar sesión
+            </button>
+            <button (click)="salir()" 
+                    *ngIf="auth.isAuthenticated()" 
+                    type="button" 
+                    class="btn btn-outline-light">Cerrar sesión
+            </button>
+        </span>
+
     </div>
 </nav>

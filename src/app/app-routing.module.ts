@@ -4,7 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 // componentes
 import { InicioComponent } from './components/bodies/home/inicio/inicio.component';
 import { ContactenosComponent } from './components/bodies/home/contactenos/contactenos.component';
-import { IniciarSesionComponent } from './components/bodies/home/iniciar-sesion/iniciar-sesion.component';
+// import { IniciarSesionComponent } from './components/bodies/home/iniciar-sesion/iniciar-sesion.component';
 
 import { OpcionesComponent } from './components/bodies/menu/opciones/opciones/opciones.component';
 
@@ -17,12 +17,12 @@ import { ModificarProductoComponent } from './components/bodies/menu/inventario/
 const routes: Routes = [
   {path: 'inicio', component: InicioComponent},
   {path: 'contactenos', component: ContactenosComponent},
-  {path: 'iniciar-sesion', component: IniciarSesionComponent},
-  {path: 'iniciar-sesion/menu', component: OpcionesComponent},
-  {path: 'iniciar-sesion/menu/productos', component: ProductosComponent},
-  {path: 'iniciar-sesion/menu/productos/crear-producto', component: CrearProductoComponent},
-  {path: 'iniciar-sesion/menu/productos/eliminar-producto/:id', component: EliminarProductoComponent},
-  {path: 'iniciar-sesion/menu/productos/modificar-producto/:id', component: ModificarProductoComponent},
+  // {path: 'iniciar-sesion', component: IniciarSesionComponent},
+  {path: 'menu', component: OpcionesComponent},
+  {path: 'menu/productos', component: ProductosComponent},
+  {path: 'menu/productos/crear-producto', component: CrearProductoComponent},
+  {path: 'menu/productos/eliminar-producto', component: EliminarProductoComponent},
+  {path: 'menu/productos/modificar-producto', component: ModificarProductoComponent},
   {path: '**', pathMatch: 'full', redirectTo: 'inicio'}
 ];
 
