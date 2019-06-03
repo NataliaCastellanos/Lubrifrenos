@@ -19,11 +19,7 @@ import { OpcionesComponent } from './components/bodies/menu/opciones/opciones/op
 import { ProductosComponent } from './components/bodies/menu/inventario/productos/productos.component';
 import { CrearProductoComponent } from './components/bodies/menu/inventario/crear-producto/crear-producto.component';
 import { EliminarProductoComponent } from './components/bodies/menu/inventario/eliminar-producto/eliminar-producto.component';
-
-// services
-import {EliminarProductoService} from './servicios/eliminar-producto.service';
-
-
+import { ModificarProductoComponent } from './components/bodies/menu/inventario/modificar-producto/modificar-producto.component';
 
 @NgModule({
   declarations: [
@@ -36,14 +32,14 @@ import {EliminarProductoService} from './servicios/eliminar-producto.service';
     OpcionesComponent,
     ProductosComponent,
     CrearProductoComponent,
-    EliminarProductoComponent
+    EliminarProductoComponent,
+    ModificarProductoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
   providers: [
-    EliminarProductoService
   ],
   bootstrap: [AppComponent]
 })

@@ -15,6 +15,7 @@ import { OpcionesComponent } from './bodies/menu/opciones/opciones/opciones.comp
 import { CrearProductoComponent } from './bodies/menu/inventario/crear-producto/crear-producto.component';
 import { ProductosComponent } from './bodies/menu/inventario/productos/productos.component';
 import { EliminarProductoComponent } from './bodies/menu/inventario/eliminar-producto/eliminar-producto.component';
+import { ModificarProductoComponent } from './bodies/menu/inventario/modificar-producto/modificar-producto.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { EliminarProductoComponent } from './bodies/menu/inventario/eliminar-pro
     OpcionesComponent,
     CrearProductoComponent,
     ProductosComponent,
-    EliminarProductoComponent
+    EliminarProductoComponent,
+    ModificarProductoComponent
   ],
   imports: [
     CommonModule,

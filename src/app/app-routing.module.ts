@@ -10,6 +10,9 @@ import { OpcionesComponent } from './components/bodies/menu/opciones/opciones/op
 
 import { ProductosComponent } from './components/bodies/menu/inventario/productos/productos.component';
 import { CrearProductoComponent } from './components/bodies/menu/inventario/crear-producto/crear-producto.component';
+import { EliminarProductoComponent } from './components/bodies/menu/inventario/eliminar-producto/eliminar-producto.component';
+import { ModificarProductoComponent } from './components/bodies/menu/inventario/modificar-producto/modificar-producto.component';
+
 
 const routes: Routes = [
   {path: 'inicio', component: InicioComponent},
@@ -18,6 +21,8 @@ const routes: Routes = [
   {path: 'iniciar-sesion/menu', component: OpcionesComponent},
   {path: 'iniciar-sesion/menu/productos', component: ProductosComponent},
   {path: 'iniciar-sesion/menu/productos/crear-producto', component: CrearProductoComponent},
+  {path: 'iniciar-sesion/menu/productos/eliminar-producto', component: EliminarProductoComponent},
+  {path: 'iniciar-sesion/menu/productos/modificar-producto', component: ModificarProductoComponent},
   {path: '**', pathMatch: 'full', redirectTo: 'inicio'}
 ];
 

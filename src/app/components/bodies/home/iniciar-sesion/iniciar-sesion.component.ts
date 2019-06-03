@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { OpcionesService } from '../../../../servicios/opciones.service';
 
 @Component({
   selector: 'app-iniciar-sesion',
@@ -8,7 +7,7 @@ import { OpcionesService } from '../../../../servicios/opciones.service';
 })
 export class IniciarSesionComponent implements OnInit {
 
-  constructor(private opciones: OpcionesService) { }
+  constructor() { }
 
   ngOnInit() {
   }

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { EliminarProductoService } from '../../../../../servicios/eliminar-producto.service';
+// import { EliminarProductoService, Productos } from '../../../../../servicios/eliminar-producto.service';
 
 @Component({
   selector: 'app-eliminar-producto',
@@ -9,9 +9,12 @@ import { EliminarProductoService } from '../../../../../servicios/eliminar-produ
 })
 export class EliminarProductoComponent implements OnInit {
 
-  constructor(private eliminarServicio: EliminarProductoService) { }
+  // productos: Productos[] = [];
+  // private eliminarServicio: EliminarProductoService
+  constructor() { }
 
   ngOnInit() {
+    // this.productos = this.eliminarServicio.getProductos();
   }
 
 }
