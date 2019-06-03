@@ -8,28 +8,40 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { HeaderComponent} from './components/header/header.component';
-import { BodyComponent} from './components/body/body.component';
 import { FooterComponent } from './components/footer/footer.component';
 
 import { InicioComponent } from './components/bodies/home/inicio/inicio.component';
 import { ContactenosComponent } from './components/bodies/home/contactenos/contactenos.component';
 import { IniciarSesionComponent } from './components/bodies/home/iniciar-sesion/iniciar-sesion.component';
 
+import { OpcionesComponent } from './components/bodies/menu/opciones/opciones/opciones.component';
+
+import { ProductosComponent } from './components/bodies/menu/inventario/productos/productos.component';
+import { CrearProductoComponent } from './components/bodies/menu/inventario/crear-producto/crear-producto.component';
+
+// services
+import { OpcionesService} from './servicios/opciones.service';
+
+
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    BodyComponent,
     FooterComponent,
     InicioComponent,
     ContactenosComponent,
-    IniciarSesionComponent
+    IniciarSesionComponent,
+    OpcionesComponent,
+    ProductosComponent,
+    CrearProductoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    OpcionesService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
